@@ -9,3 +9,5 @@ export const SECTION_TITLES = {
 };
 
 export const FOOTER_TEXT = 'С любовью от Mercury Development';
+
+export const FORECAST_PLACEHOLDER = 'Fill in all the fields and the weather will be displayed';

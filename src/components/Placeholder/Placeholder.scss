@@ -1,0 +1,31 @@
+@use 'src/styles/variables' as var;
+
+.placeholder {
+  padding: 15px 0 25px;
+
+  &__img {
+    display: block;
+    margin: 34px auto 0;
+    width: 160px;
+    height: 160px;
+  }
+
+  &__text {
+    margin: 24px 20px;
+    font-family: var.$main_font;
+    color: var.$secondary;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+
+    &_error {
+      color: var.$critic;
+    }
+  }
+}
+
+.panel:first-of-type {
+  .placeholder__img {
+    border: 1px dashed var.$secondary;
+  }
+}
