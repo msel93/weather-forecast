@@ -1,0 +1,84 @@
+@use 'src/styles/variables' as var;
+
+$slider_list_margin: var.$table_portrait 46px, var.$phone_landscape 24px;
+
+.slider {
+  position: relative;
+  min-height: 268px;
+
+  &__list-wrapper {
+    width: calc(100% + 29px);
+    min-height: inherit;
+    overflow-x: scroll;
+
+    @supports (overflow-x: overlay) {
+      overflow-x: overlay;
+    }
+
+    @each $size, $margin in $slider_list_margin {
+      @media (max-width: $size) {
+        width: calc(100% + #{$margin * 2});
+        margin: 0 -#{$margin};
+      }
+    }
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    scrollbar-width: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    min-height: inherit;
+
+    @media (max-width: var.$table_portrait) {
+      width: max-content;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    border: none;
+    background-color: transparent;
+
+    @media (max-width: var.$table_portrait) {
+      display: none;
+    }
+
+    &_left {
+      left: 0;
+      transform: translate(-100%, calc(-50% + -10px));
+    }
+
+    &_right {
+      right: 0;
+      transform: translate(100%, calc(-50% + -10px));
+    }
+
+    &_disabled {
+      opacity: 0.4;
+    }
+  }
+
+  &__item {
+    min-height: inherit;
+    margin-right: 27px;
+
+    @each $size, $margin in $slider_list_margin {
+      @media (max-width: $size) {
+        &:first-of-type {
+          margin-left: $margin;
+        }
+
+        &:last-of-type {
+          margin-right: $margin;
+        }
+      }
+    }
+  }
+}
