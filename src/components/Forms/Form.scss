@@ -1,0 +1,38 @@
+@use 'src/styles/variables' as var;
+
+.form {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__filter {
+    flex: 0 1 50%;
+    padding: 0 20px 24px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+
+    @media (max-width: var.$phone_landscape) {
+      padding: 0 0 24px;
+      flex-basis: 100%;
+    }
+  }
+}
+
+.forecast-block {
+  padding-top: 30px;
+
+  @media (max-width: var.$phone_landscape) {
+    padding-top: 6px;
+  }
+
+  &__wrapper {
+    height: 1px;
+    min-height: 270px;
+  }
+}
