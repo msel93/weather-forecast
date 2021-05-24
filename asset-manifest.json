@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/weather-forecast/static/css/main.28f5e25e.chunk.css",
+    "main.css": "/weather-forecast/static/css/main.44734975.chunk.css",
     "main.js": "/weather-forecast/static/js/main.8f6cc42d.chunk.js",
     "main.js.map": "/weather-forecast/static/js/main.8f6cc42d.chunk.js.map",
     "runtime-main.js": "/weather-forecast/static/js/runtime-main.f8f568d8.js",
@@ -8,7 +8,7 @@
     "static/js/2.1d254979.chunk.js": "/weather-forecast/static/js/2.1d254979.chunk.js",
     "static/js/2.1d254979.chunk.js.map": "/weather-forecast/static/js/2.1d254979.chunk.js.map",
     "index.html": "/weather-forecast/index.html",
-    "static/css/main.28f5e25e.chunk.css.map": "/weather-forecast/static/css/main.28f5e25e.chunk.css.map",
+    "static/css/main.44734975.chunk.css.map": "/weather-forecast/static/css/main.44734975.chunk.css.map",
     "static/js/2.1d254979.chunk.js.LICENSE.txt": "/weather-forecast/static/js/2.1d254979.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/weather-forecast/static/media/Academy-Weather forecast-Bg-up@2x.1b9e0722.png",
     "static/media/Academy-Weather-bg160.c93ab75c.svg": "/weather-forecast/static/media/Academy-Weather-bg160.c93ab75c.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.f8f568d8.js",
     "static/js/2.1d254979.chunk.js",
-    "static/css/main.28f5e25e.chunk.css",
+    "static/css/main.44734975.chunk.css",
     "static/js/main.8f6cc42d.chunk.js"
   ]
 }
