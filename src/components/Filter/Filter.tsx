@@ -26,6 +26,8 @@ const Filter: React.FC<IProps> = ({ hasFilter, onChange }) => {
     const isDateValid = hasFilter.date ? date : true;
     if (isCityValid && isDateValid) {
       onChange({ city, date });
+    } else {
+      onChange(null);
     }
   }, [city, date]);
 

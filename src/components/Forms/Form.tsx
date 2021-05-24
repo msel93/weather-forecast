@@ -46,6 +46,8 @@ const Form: React.FC<IProps> = ({ hasFilter, getRequestParamsCallback, requestFo
             updateForecastData([]);
           }
         });
+    } else {
+      updateForecastData([]);
     }
     return () => (isCancelled = true);
   }, [filters]);

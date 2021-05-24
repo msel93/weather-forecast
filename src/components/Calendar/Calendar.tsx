@@ -21,9 +21,7 @@ const Calendar: React.FC<IProps> = ({ placeholder, maxDate, onChange }) => {
   });
 
   useEffect(() => {
-    if (value) {
-      onChange(value);
-    }
+    onChange(value);
   }, [value]);
 
   const handleDateInput = (e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value);
