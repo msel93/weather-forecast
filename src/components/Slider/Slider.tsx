@@ -66,7 +66,7 @@ const Slider: React.FC<IProps> = ({ items }) => {
       <button className={leftButtonClass} onClick={handleLeftButtonClick}>
         <LeftButtonSvg />
       </button>
-      <div className="slider__list-wrapper">
+      <div className="slider__list-wrapper custom-scrollbar">
         <ul className="slider__list">
           {displayedItems.map(item => (
             <li className="slider__item" key={item.date}>
