@@ -20,3 +20,9 @@ export function subtractDays (date: Date, value: number): Date {
 export function getCurrentDate (): Date {
   return new Date();
 }
+
+export function getDateInUnixForRequest (dateString: string): number {
+  const date = moment(dateString, DATE_FORMATS.ISO_DATE).toDate();
+  const dateTime = moment(date).add(12, 'hours').toDate();
+  return dateTime.getTime() / 1000;
+}
