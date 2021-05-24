@@ -23,7 +23,7 @@ $slider_list_margin: var.$table_portrait 46px, var.$phone_landscape 24px;
     }
 
     &::-webkit-scrollbar {
-      width: 0;
+      width: 0 !important;
     }
     scrollbar-width: none;
   }
