@@ -10,4 +10,9 @@ export const SECTION_TITLES = {
 
 export const FOOTER_TEXT = 'С любовью от Mercury Development';
 
+export const INPUT_PLACEHOLDERS = {
+  SELECT_CITY: 'Select city',
+  SELECT_DATE: 'Select date'
+};
+
 export const FORECAST_PLACEHOLDER = 'Fill in all the fields and the weather will be displayed';

@@ -12,3 +12,8 @@ export interface IDailyForecast {
     description: string;
   };
 }
+
+export interface IFilters {
+  city?: ICity | null;
+  date?: string;
+}
