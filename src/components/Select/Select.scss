@@ -5,61 +5,17 @@
   width: 100%;
 
   &__input-wrapper {
-    position: relative;
-    width: inherit;
-
-    &::after {
-      position: absolute;
-      right: 0;
-      width: 54px;
-      height: 100%;
-      content: '';
-      cursor: pointer;
-      pointer-events: none;
-      transition: opacity 0.2s;
-    }
-
     &_opened::after {
       background: url('../../assets/images/icons/16/chevron-top.svg') no-repeat center;
     }
     &_closed::after {
       background: url('../../assets/images/icons/16/chevron-bottom.svg') no-repeat center;
     }
-
-    &:hover::after {
-      opacity: 0.6;
-    }
   }
 
   &__input {
-    width: inherit;
-    height: 48px;
-    padding: 0 54px 0 16px;
-    font-family: var.$main_font;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: var.$secondary;
-    background: rgba(var.$secondary, 0.06);
-    border: 2px solid rgba(var.$secondary, 0.2);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: border-color 0.3s;
-
     &::placeholder {
       color: var.$secondary;
-    }
-
-    &:hover {
-      border-color: var.$secondary;
-    }
-
-    &:focus {
-      border-color: var.$accent;
-    }
-
-    &_filled {
-      color: var.$base_strong;
     }
 
     &_invalid, &_invalid:focus {

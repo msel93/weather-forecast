@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import './Calendar.scss';
+import '../Filter/Filter.scss';
 
 interface IProps {
   placeholder: string;

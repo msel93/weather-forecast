@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import { Balloon } from '../Balloon';
 import { ICity } from '../../interfaces';
 import './Select.scss';
+import '../Filter/Filter.scss';
 
 interface IProps {
   items: ICity[];

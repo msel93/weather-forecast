@@ -10,50 +10,14 @@
   width: 100%;
 
   &::after {
-    position: absolute;
-    right: 0;
-    width: 54px;
-    height: 100%;
     background: url("../../assets/images/icons/16/calendar.svg") no-repeat center;
-    content: '';
-    cursor: pointer;
-    pointer-events: none;
-    transition: opacity 0.2s;
-  }
-
-  &:hover::after {
-    opacity: 0.6;
   }
 
   &__input {
-    width: inherit;
-    height: 48px;
-    padding: 0 12px 0 16px;
-    font-family: var.$main_font;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: var.$secondary;
-    background: rgba(var.$secondary, 0.06);
-    border: 2px solid rgba(var.$secondary, 0.2);
-    border-radius: 8px;
-    cursor: pointer;
-    transition: border-color 0.3s;
-
     &:hover {
-      border-color: var.$secondary;
-
       ::-webkit-calendar-picker-indicator {
         opacity: 0.6;
       }
-    }
-
-    &:focus {
-      border-color: var.$accent;
-    }
-
-    &_filled {
-      color: var.$base_strong;
     }
 
     &_inactive {
